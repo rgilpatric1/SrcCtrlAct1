@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Sumanth.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Sumanth.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Sumanth.cs">
+      <DependentUpon>Sumanth.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
